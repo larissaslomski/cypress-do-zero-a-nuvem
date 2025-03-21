@@ -1,0 +1,24 @@
+apenas querys (comandos de busca) são retentados no cypress
+comando de ação não são retentados
+
+. é classe
+# é id
+
+comando customizados: cypress/support/commands.js
+ - pode criar quantos arquivos de comandos customizados quiser (não esquecer de importar no e2e.js)
+
+seleções suspensas: value, texto ou indice
+- se for multipla escolha, pode passar os valores que deseja selecionar em um array
+
+marcando input do tipo radio
+- da pra usar .click() mas .check() é mais correto
+- .each() itera sobre array
+- .wrap() 
+
+marcando input do tipo checkbox 
+- pode ser check() tmb
+- .click() marca e desmarca
+- .check() marca/desmarca mesmo se já estava marcado/desmarcado -> teste mais seguro
+- .check() encadeado ao cy.get() marca mais de um checkbox
+
+upload de arquivo 
